@@ -1,24 +1,14 @@
-import React, { useEffect, useState } from 'react';
-import ReactMarkdown from 'react-markdown';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Fade } from 'react-awesome-reveal';
 import Header from './Header';
-import endpoints from '../constants/endpoints';
+import useProfile from '../hooks/useProfile';
 import FallbackSpinner from './FallbackSpinner';
 import '../css/skills.css';
 
 function Skills(props) {
   const { header } = props;
-  const [data, setData] = useState(null);
-
-  useEffect(() => {
-    fetch(endpoints.skills, {
-      method: 'GET',
-    })
-      .then((res) => res.json())
-      .then((res) => setData(res))
-      .catch((err) => err);
-  }, []);
+  const data = useProfile('skills.json');
 
   return (
     <>
@@ -28,20 +18,25 @@ function Skills(props) {
           <Fade triggerOnce>
             <div className="bento">
               {data.intro && (
-                <div className="tile skills-intro-tile span-6">
-                  <ReactMarkdown>{data.intro}</ReactMarkdown>
-                </div>
+                <p className="skills-intro span-6">{data.intro}</p>
               )}
               {data.skills?.map((category) => (
                 <div
                   key={category.title}
-                  className="tile tile--interactive skill-category-tile span-2"
+                  className="tile tile--interactive skill-category-tile span-3"
                 >
-                  <h3 className="skill-category-title">{category.title}</h3>
+                  <h3 className="skill-category-title">
+                    {category.icon && (
+                      <img src={category.icon} alt="" />
+                    )}
+                    {category.title}
+                  </h3>
                   <div className="skill-grid">
                     {category.items.map((item) => (
                       <div key={item.title} className="skill-item">
-                        <img src={item.icon} alt={item.title} />
+                        {item.icon && (
+                          <img src={item.icon} alt="" />
+                        )}
                         <span>{item.title}</span>
                       </div>
                     ))}

@@ -1,12 +1,10 @@
-/* Skills as a bento: a wide intro tile over a row of category tiles. */
+/* Skills as a 2×2 bento. Icons are optional until image paths are added. */
 
-.skills-intro-tile {
-  text-align: left;
-}
-
-.skills-intro-tile p {
+.skills-intro {
+  text-align: center;
   color: var(--text-muted);
-  margin: 0;
+  margin: 0 auto var(--space-2);
+  max-width: 46rem;
   font-size: 1.05rem;
   line-height: 1.6;
 }
@@ -15,45 +13,46 @@
   text-align: left;
   display: flex;
   flex-direction: column;
-  gap: var(--space-4);
+  gap: var(--space-5);
 }
 
 .skill-category-title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
   font-family: var(--font-display);
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: 600;
   letter-spacing: -0.01em;
   margin: 0;
 }
 
+.skill-category-title img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
 .skill-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-5) var(--space-4);
+  gap: 0.9rem 1.35rem;
 }
 
 .skill-item {
-  display: flex;
-  flex-direction: column;
+  display: inline-flex;
   align-items: center;
-  gap: var(--space-2);
-  width: 84px;
+  gap: 0.4rem;
 }
 
 .skill-item img {
-  height: 48px;
-  width: 48px;
+  width: 18px;
+  height: 18px;
   object-fit: contain;
-  transition: transform var(--dur) var(--ease);
-}
-
-.skill-item:hover img {
-  transform: translateY(-4px) scale(1.08);
 }
 
 .skill-item span {
-  font-size: 0.78rem;
+  font-size: 0.98rem;
   color: var(--text-muted);
-  text-align: center;
   line-height: 1.3;
 }

@@ -1,0 +1,114 @@
+{
+  "projects": [
+    {
+      "image": "images/projects/FACTOR.png",
+      "title": "Fine-Grained Attribute-Aware Multimodal Fashion Recommendation",
+      "bodyText": "**Master's Thesis — SJSU, 2026**\n\nFashion recommenders that compare a whole image miss small but important differences in color, material, pattern, and style. This thesis pairs CLIP and FashionCLIP with fine-grained attributes, including the FACTOR adaptation method, then compares image, text, and fusion retrieval. Category accuracy reached 93%, and text retrieval from structured attributes reached about a 99% weighted attribute score.",
+      "github": "https://github.com/Sandyhsy/FACTOR",
+      "tags": [
+        "Python",
+        "PyTorch",
+        "CLIP",
+        "FashionCLIP",
+        "Vision-Language Models",
+        "Transfer Learning",
+        "Multimodal Embeddings",
+        "Semantic Similarity",
+        "Retrieval Ranking"
+      ]
+    },
+    {
+      "image": "images/projects/StyleFusion.png",
+      "title": "Multimodal StyleFusion: Cross-Attention Learning for Fashion Style Recognition",
+      "bodyText": "**Collaborative - Deep Learning Project, SJSU**\n\nStyle labels such as Casual, Chic, and Street are more abstract than garment categories. This project fuses CLIP ViT-B/32 visual features with LLaVA or Qwen descriptions through cross-attention. On the 14-class FashionStyle14 dataset, accuracy and F1 were both 0.83. Once the image encoder was already fine-tuned, the extra text brought little further gain.",
+      "github": "https://github.com/Sandyhsy/FusionStyle",
+      "paper": "https://www.sciencedirect.com/science/article/pii/S266682702600126X",
+      "tags": [
+        "Python",
+        "PyTorch",
+        "CLIP ViT-B/32",
+        "BERT",
+        "LLaVA",
+        "Qwen",
+        "Multi-Head Cross-Attention",
+        "Multimodal Feature Fusion"
+      ]
+    },
+    {
+      "image": "images/projects/Distributed.png",
+      "title": "Distributed Booking System: Event-Driven Microservices Architecture",
+      "bodyText": "**Collaborative - Distributed Systems Project, SJSU**\n\nI designed and built the Booking Service: creation, cancellation, and billing, with MySQL schemas and transactions, Kafka events, Redis caching, and JMeter load tests. User, listings, recommendation, frontend, and cloud deployment belong to the team architecture.",
+      "github": "https://github.com/Sandyhsy/Data236_Lab",
+      "tags": [
+        "Node.js",
+        "REST APIs",
+        "MySQL",
+        "MongoDB",
+        "Redis",
+        "Apache Kafka",
+        "Docker",
+        "React",
+        "JMeter",
+        "AWS"
+      ]
+    },
+    {
+      "image": "images/projects/RAG.png",
+      "title": "Multimodal RAG for Document Question Answering",
+      "bodyText": "**Collaborative - Generative AI Project, SJSU**\n\nText-only RAG drops tables, figures, and the numbers inside them. This pipeline parses PDFs, links captions to nearby text, and searches separate FAISS indexes for passages and figure or table objects before Gemini 2.5 Flash writes a grounded answer. The baseline dual-index pipeline scored 0.4639, higher than the later retrieval and prompt variants.",
+      "github": "https://github.com/Sandyhsy/Data266_GenerativeModel_Lab/tree/main/Lab_2/Part_1",
+      "tags": [
+        "Python",
+        "PyMuPDF",
+        "SentenceTransformers",
+        "FAISS",
+        "Gemini 2.5 Flash",
+        "PDF Parsing",
+        "Semantic Retrieval",
+        "Prompt Engineering"
+      ]
+    },
+    {
+      "image": "images/projects/DATA201.png",
+      "title": "E-Commerce Database Design",
+      "bodyText": "**Team Lead — Database Project, SJSU**\n\nI led the team, designed the e-commerce database, and assigned the work. The schema has an operational MySQL database for orders, products, customers, sellers, and payments, plus an analytical star schema for sales trends. The team then built customer, seller, and manager portals in Python and PyQt5 on that design.",
+      "github": "https://github.com/Sandyhsy/DATA201-Database",
+      "tags": [
+        "MySQL",
+        "Database Design",
+        "SQL",
+        "Python",
+        "PyQt5",
+        "Star Schema"
+      ]
+    },
+    {
+      "image": "images/projects/DATA228.png",
+      "title": "Malicious and Benign Image Classification",
+      "bodyText": "**Group Project — Big Data Technologies Project, SJSU**\n\nA pipeline that classifies images as harmful or benign. It filters Open Images into a balanced set, compares fine-tuned MobileNetV2 and ResNet50, and streams images through Apache Kafka for classification. MobileNetV2 reached 83.5% accuracy, with higher recall on harmful content.",
+      "github": "https://github.com/Sandyhsy/DATA228_Big_Data_Tech/tree/main/Project",
+      "tags": [
+        "Python",
+        "PyTorch",
+        "MobileNetV2",
+        "ResNet50",
+        "Apache Kafka",
+        "Open Images"
+      ]
+    },
+    {
+      "image": "images/projects/CatLover.jpg",
+      "title": "Cat Lover",
+      "bodyText": "**Solo Project - PHP and Database Project, NUK*\n\nA cat-care site I built on my own, with pages for breeds, common diseases, and pet hospitals in Taiwan. PHP reads and updates a MySQL database, including search and an admin area for hospitals, diseases, breeds, and the about text.",
+      "github": "https://github.com/Sandyhsy/Cat_Lover_Website",
+      "tags": [
+        "PHP",
+        "MySQL",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Docker"
+      ]
+    }
+  ]
+}

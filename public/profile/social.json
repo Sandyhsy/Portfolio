@@ -1,20 +1,25 @@
 {
     "social": [
         {
-            "network" : "linkedin",
-            "href": "https://linkedin.com/"
+            "network": "linkedin",
+            "label": "LinkedIn",
+            "href": "https://linkedin.com/in/huangshaoyu318/"
         },
         {
-            "network" : "github",
-            "href": "https://github.com/mayankagarwal09"
+            "network": "github",
+            "label": "GitHub",
+            "href": "https://github.com/Sandyhsy"
         },
         {
-            "network" : "leetcode",
-            "href": "https://leetcode.com/"
+            "network": "leetcode",
+            "label": "LeetCode",
+            "href": "https://leetcode.com/u/shaoyu_318/"
         },
         {
-            "network" : "email",
-            "href": "mailto:test@test.com"
+            "network": "email",
+            "label": "Email",
+            "href": "mailto:sandyhsy0447@gmail.com"
         }
     ]
 }
+

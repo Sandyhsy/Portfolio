@@ -1,0 +1,60 @@
+{
+  "intro": "我在 AI 研究、機器學習與工程專案中使用過的技術與框架。",
+  "skills": [
+    {
+      "title": "AI 與機器學習",
+      "items": [
+        { "title": "PyTorch" },
+        { "title": "Scikit-learn" },
+        { "title": "Transformers" },
+        { "title": "CLIP" },
+        { "title": "BERT" },
+        { "title": "Computer Vision" },
+        { "title": "Multimodal Learning" },
+        { "title": "Fine-Tuning" }
+      ]
+    },
+    {
+      "title": "大型語言模型與生成式 AI",
+      "items": [
+        { "title": "LLM" },
+        { "title": "RAG" },
+        { "title": "FAISS" },
+        { "title": "SentenceTransformers" },
+        { "title": "Prompt Engineering" },
+        { "title": "LLaVA" },
+        { "title": "Qwen" },
+        { "title": "Gemini" }
+      ]
+    },
+    {
+      "title": "程式設計與後端",
+      "items": [
+        { "title": "Python" },
+        { "title": "SQL" },
+        { "title": "JavaScript" },
+        { "title": "FastAPI" },
+        { "title": "Node.js" },
+        { "title": "REST APIs" },
+        { "title": "MySQL" },
+        { "title": "MongoDB" },
+        { "title": "Redis" },
+        { "title": "Kafka" }
+      ]
+    },
+    {
+      "title": "資料工程與雲端",
+      "items": [
+        { "title": "Docker" },
+        { "title": "Kubernetes" },
+        { "title": "AWS" },
+        { "title": "Git" },
+        { "title": "Apache Airflow" },
+        { "title": "Snowflake" },
+        { "title": "dbt" },
+        { "title": "Apache Spark" },
+        { "title": "JMeter" }
+      ]
+    }
+  ]
+}

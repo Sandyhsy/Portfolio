@@ -1,0 +1,32 @@
+{
+  "education": [
+    {
+      "title": "2024 年 8 月 – 2026 年 5 月",
+      "cardTitle": "Applied Data Intelligence",
+      "cardSubtitle": "聖荷西州立大學，美國加州",
+      "cardDetailedText": "GPA - 3.25/4.0",
+      "icon": {
+        "src": "images/education/SJSU_logo.svg"
+      },
+      "transcript": {
+        "label": "成績單",
+        "downloadLabel": "下載成績單",
+        "src": "images/education/SJSU_Transcript.pdf"
+      }
+    },
+    {
+      "title": "2020 年 9 月 – 2024 年 6 月",
+      "cardTitle": "Applied Data Intelligence",
+      "cardSubtitle": "國立高雄大學，高雄",
+      "cardDetailedText": "GPA - 3.33/4.0",
+      "icon": {
+        "src": "images/education/NUK_logo.jpg"
+      },
+      "transcript": {
+        "label": "成績單",
+        "downloadLabel": "下載成績單",
+        "src": "images/education/NUK_Transcript.pdf"
+      }
+    }
+  ]
+}

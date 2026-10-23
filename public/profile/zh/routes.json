@@ -1,0 +1,9 @@
+{
+  "sections": [
+    { "component": "Skills", "path": "/skills", "headerTitle": "技術技能" },
+    { "component": "Education", "path": "/education", "headerTitle": "學歷" },
+    { "component": "Experience", "path": "/experience", "headerTitle": "經歷" },
+    { "component": "Resume", "path": "/resume", "headerTitle": "履歷" },
+    { "component": "Projects", "path": "/projects", "headerTitle": "專案" }
+  ]
+}

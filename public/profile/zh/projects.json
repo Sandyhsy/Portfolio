@@ -1,0 +1,114 @@
+{
+  "projects": [
+    {
+      "image": "images/projects/FACTOR.png",
+      "title": "細粒度屬性感知的多模態時尚推薦",
+      "bodyText": "**碩士論文 — SJSU，2026**\n\n傳統時尚推薦多半比較整張圖片，難以分辨顏色、材質、花紋與風格的細微差異。這篇論文以 CLIP、FashionCLIP 與 FACTOR 辨識服裝屬性，並比較影像、文字與融合檢索。類別分類準確率 93%；用結構化屬性做文字檢索時，加權屬性分數約 99%。",
+      "github": "https://github.com/Sandyhsy/FACTOR",
+      "tags": [
+        "Python",
+        "PyTorch",
+        "CLIP",
+        "FashionCLIP",
+        "Vision-Language Models",
+        "Transfer Learning",
+        "Multimodal Embeddings",
+        "Semantic Similarity",
+        "Retrieval Ranking"
+      ]
+    },
+    {
+      "image": "images/projects/StyleFusion.png",
+      "title": "Multimodal StyleFusion：以交叉注意力辨識服裝風格",
+      "bodyText": "**小組專案 — 深度學習，SJSU**\n\nCasual、Chic、Street 這類風格比衣服種類更抽象。本研究把 CLIP ViT-B/32 的視覺特徵，與 LLaVA 或 Qwen 產生的描述，用 Cross-Attention 融合。在 14 類的 FashionStyle14 上，準確率與 F1 都是 0.83。影像編碼器已經微調之後，文字帶來的額外提升很有限。",
+      "github": "https://github.com/Sandyhsy/FusionStyle",
+      "paper": "https://www.sciencedirect.com/science/article/pii/S266682702600126X",
+      "tags": [
+        "Python",
+        "PyTorch",
+        "CLIP ViT-B/32",
+        "BERT",
+        "LLaVA",
+        "Qwen",
+        "Multi-Head Cross-Attention",
+        "Multimodal Feature Fusion"
+      ]
+    },
+    {
+      "image": "images/projects/Distributed.png",
+      "title": "分散式預訂系統：事件驅動微服務",
+      "bodyText": "**小組專案 — 分散式系統，SJSU**\n\n我負責 Booking Service：預訂建立、取消與帳單，以及 MySQL 結構與交易、Kafka 事件、Redis 快取和 JMeter 負載測試。使用者、房源、推薦、前端與雲端部署屬於團隊架構。",
+      "github": "https://github.com/Sandyhsy/Data236_Lab",
+      "tags": [
+        "Node.js",
+        "REST APIs",
+        "MySQL",
+        "MongoDB",
+        "Redis",
+        "Apache Kafka",
+        "Docker",
+        "React",
+        "JMeter",
+        "AWS"
+      ]
+    },
+    {
+      "image": "images/projects/RAG.png",
+      "title": "文件問答的多模態 RAG",
+      "bodyText": "**小組專案 — 自然語言與生成式 AI 合作專案，SJSU**\n\n只檢索文字的 RAG 會漏掉表格、圖表和裡面的數字。這個流程解析 PDF、把圖說連到附近文字，再用兩組 FAISS 索引分別找段落與圖表物件，最後由 Gemini 2.5 Flash 依證據回答。基準雙索引流程分數 0.4639，高於後來調整檢索與提示的版本。",
+      "github": "https://github.com/Sandyhsy/Data266_GenerativeModel_Lab/tree/main/Lab_2/Part_1",
+      "tags": [
+        "Python",
+        "PyMuPDF",
+        "SentenceTransformers",
+        "FAISS",
+        "Gemini 2.5 Flash",
+        "PDF Parsing",
+        "Semantic Retrieval",
+        "Prompt Engineering"
+      ]
+    },
+    {
+      "image": "images/projects/DATA201.png",
+      "title": "電商資料庫設計",
+      "bodyText": "**組長 — 資料庫，SJSU**\n\n我擔任組長，負責設計電商資料庫，並把工作分派給組員。資料庫包含訂單、商品、顧客、賣家與付款的 MySQL 操作型結構，以及用來看銷售趨勢的星狀分析結構。團隊再依這個設計，用 Python 和 PyQt5 做出顧客、賣家與管理者入口。",
+      "github": "https://github.com/Sandyhsy/DATA201-Database",
+      "tags": [
+        "MySQL",
+        "Database Design",
+        "SQL",
+        "Python",
+        "PyQt5",
+        "Star Schema"
+      ]
+    },
+    {
+      "image": "images/projects/DATA228.png",
+      "title": "有害與安全圖片分類",
+      "bodyText": "**小組專案 — 大數據技術，SJSU**\n\n把圖片分成有害或安全。從 Open Images 整理出平衡資料，比較微調後的 MobileNetV2 與 ResNet50，再用 Apache Kafka 串流圖片並分類。MobileNetV2 準確率 83.5%，對有害內容的召回較高。",
+      "github": "https://github.com/Sandyhsy/DATA228_Big_Data_Tech/tree/main/Project",
+      "tags": [
+        "Python",
+        "PyTorch",
+        "MobileNetV2",
+        "ResNet50",
+        "Apache Kafka",
+        "Open Images"
+      ]
+    },
+    {
+      "image": "images/projects/CatLover.jpg",
+      "title": "Cat Lover",
+      "bodyText": "**單人報告 - PHP 與資料庫課程，NUK **\n\n自己做的愛貓資訊網站，有貓咪品種、常見疾病和台灣寵物醫院。PHP 讀寫 MySQL，可以搜尋，後台也能維護醫院、疾病、品種和關於我們。",
+      "github": "https://github.com/Sandyhsy/Cat_Lover_Website",
+      "tags": [
+        "PHP",
+        "MySQL",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Docker"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "intro": "Technologies and frameworks I have applied across AI research, machine learning, and engineering projects.",
+  "skills": [
+    {
+      "title": "AI & Machine Learning",
+      "items": [
+        { "title": "PyTorch" },
+        { "title": "Scikit-learn" },
+        { "title": "Transformers" },
+        { "title": "CLIP" },
+        { "title": "BERT" },
+        { "title": "Computer Vision" },
+        { "title": "Multimodal Learning" },
+        { "title": "Fine-Tuning" }
+      ]
+    },
+    {
+      "title": "LLM & Generative AI",
+      "items": [
+        { "title": "LLM" },
+        { "title": "RAG" },
+        { "title": "FAISS" },
+        { "title": "SentenceTransformers" },
+        { "title": "Prompt Engineering" },
+        { "title": "LLaVA" },
+        { "title": "Qwen" },
+        { "title": "Gemini" }
+      ]
+    },
+    {
+      "title": "Programming & Backend",
+      "items": [
+        { "title": "Python" },
+        { "title": "SQL" },
+        { "title": "JavaScript" },
+        { "title": "FastAPI" },
+        { "title": "Node.js" },
+        { "title": "REST APIs" },
+        { "title": "MySQL" },
+        { "title": "MongoDB" },
+        { "title": "Redis" },
+        { "title": "Kafka" }
+      ]
+    },
+    {
+      "title": "Data Engineering & Cloud",
+      "items": [
+        { "title": "Docker" },
+        { "title": "Kubernetes" },
+        { "title": "AWS" },
+        { "title": "Git" },
+        { "title": "Apache Airflow" },
+        { "title": "Snowflake" },
+        { "title": "dbt" },
+        { "title": "Apache Spark" },
+        { "title": "JMeter" }
+      ]
+    }
+  ]
+}

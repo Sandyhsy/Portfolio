@@ -1,23 +1,52 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Fade } from 'react-awesome-reveal';
 import PropTypes from 'prop-types';
-import endpoints from '../constants/endpoints';
+import useProfile from '../hooks/useProfile';
 import Header from './Header';
 import FallbackSpinner from './FallbackSpinner';
 import '../css/timeline.css';
 
+function Transcript({ transcript }) {
+  const [open, setOpen] = useState(false);
+  if (!transcript?.src) return null;
+
+  return (
+    <div className="transcript">
+      <button
+        type="button"
+        className="transcript__toggle"
+        aria-expanded={open}
+        onClick={() => setOpen((value) => !value)}
+      >
+        {transcript.label}
+      </button>
+      {open && (
+        <div className="transcript__panel">
+          <iframe
+            className="transcript__frame"
+            title={transcript.label}
+            src={transcript.src}
+          />
+          <a className="btn-pill btn-ghost transcript__download" href={transcript.src} download>
+            {transcript.downloadLabel}
+          </a>
+        </div>
+      )}
+    </div>
+  );
+}
+
+Transcript.propTypes = {
+  transcript: PropTypes.shape({
+    src: PropTypes.string,
+    label: PropTypes.string,
+    downloadLabel: PropTypes.string,
+  }),
+};
+
 function Education(props) {
   const { header } = props;
-  const [data, setData] = useState(null);
-
-  useEffect(() => {
-    fetch(endpoints.education, {
-      method: 'GET',
-    })
-      .then((res) => res.json())
-      .then((res) => setData(res))
-      .catch((err) => err);
-  }, []);
+  const data = useProfile('education.json');
 
   return (
     <>
@@ -42,6 +71,7 @@ function Education(props) {
                     {item.cardDetailedText && (
                       <div className="tl-detail">{item.cardDetailedText}</div>
                     )}
+                    <Transcript transcript={item.transcript} />
                   </div>
                 </div>
               ))}

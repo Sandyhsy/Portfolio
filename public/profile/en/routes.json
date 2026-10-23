@@ -1,0 +1,9 @@
+{
+  "sections": [
+    { "component": "Skills", "path": "/skills", "headerTitle": "Technical Skills" },
+    { "component": "Education", "path": "/education", "headerTitle": "Education" },
+    { "component": "Experience", "path": "/experience", "headerTitle": "Experience" },
+    { "component": "Resume", "path": "/resume", "headerTitle": "Resume" },
+    { "component": "Projects", "path": "/projects", "headerTitle": "Projects" }
+  ]
+}

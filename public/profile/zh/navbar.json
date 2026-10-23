@@ -1,0 +1,13 @@
+{
+  "logo": {
+    "text": "Shao-Yu Huang"
+  },
+  "sections": [
+    { "title": "首頁", "href": "/" },
+    { "title": "專案", "href": "/projects" },
+    { "title": "技能", "href": "/skills" },
+    { "title": "學歷", "href": "/education" },
+    { "title": "經歷", "href": "/experience" },
+    { "title": "履歷", "href": "/resume" }
+  ]
+}

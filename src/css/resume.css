@@ -1,0 +1,17 @@
+.resume {
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.resume__download {
+  align-self: flex-end;
+}
+
+.resume__frame {
+  width: 100%;
+  height: 80vh;
+  min-height: 640px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: #fff;
+}

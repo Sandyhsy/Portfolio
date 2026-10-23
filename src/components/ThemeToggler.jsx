@@ -18,7 +18,7 @@ function ThemeToggler({ onClick = () => {} }) {
     <>
       <AppContext.Consumer>
         {(values) => (
-          <div style={{ marginBottom: 8 }}>
+          <div className="theme-toggle">
             <DarkModeToggle
               onChange={() => handleOnChange(values.darkMode)}
               checked={values.darkMode.value}

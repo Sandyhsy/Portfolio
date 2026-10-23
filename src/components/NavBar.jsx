@@ -1,16 +1,10 @@
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import React, { useEffect, useState, useContext } from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState, useContext } from 'react';
+import { NavLink, Link, useLocation } from 'react-router-dom';
 import styled, { ThemeContext } from 'styled-components';
-import endpoints from '../constants/endpoints';
+import useProfile from '../hooks/useProfile';
 import ThemeToggler from './ThemeToggler';
-
-const styles = {
-  logoStyle: {
-    width: 50,
-    height: 40,
-  },
-};
+import LanguageToggle from './LanguageToggle';
 
 const ExternalNavLink = styled.a`
   color: ${(props) => props.theme.navbarTheme.linkColor};
@@ -22,7 +16,7 @@ const ExternalNavLink = styled.a`
   }
 `;
 
-const InternalNavLink = styled(NavLink)`
+const InternalNavLink = styled(Link)`
   color: ${(props) => props.theme.navbarTheme.linkColor};
   &:hover {
     color: ${(props) => props.theme.navbarTheme.linkHoverColor};
@@ -37,17 +31,22 @@ const InternalNavLink = styled(NavLink)`
 
 const NavBar = () => {
   const theme = useContext(ThemeContext);
-  const [data, setData] = useState(null);
+  const location = useLocation();
+  const data = useProfile('navbar.json');
   const [expanded, setExpanded] = useState(false);
 
-  useEffect(() => {
-    fetch(endpoints.navbar, {
-      method: 'GET',
-    })
-      .then((res) => res.json())
-      .then((res) => setData(res))
-      .catch((err) => err);
-  }, []);
+  const isSectionActive = (href) => {
+    const hashIndex = href.indexOf('#');
+    if (hashIndex !== -1) {
+      const path = href.slice(0, hashIndex) || '/';
+      const hash = href.slice(hashIndex);
+      return location.pathname === path && location.hash === hash;
+    }
+    if (href === '/') {
+      return location.pathname === '/' && location.hash === '';
+    }
+    return location.pathname === href;
+  };
 
   return (
     <Navbar
@@ -58,18 +57,14 @@ const NavBar = () => {
       expanded={expanded}
     >
       <Container>
-        {data?.logo && (
-          <Navbar.Brand href="/">
-            <img
-              src={data?.logo?.source}
-              className="d-inline-block align-top"
-              alt="main logo"
-              style={
-                data?.logo?.height && data?.logo?.width
-                  ? { height: data?.logo?.height, width: data?.logo?.width }
-                  : styles.logoStyle
-              }
-            />
+        {data?.logo?.text && (
+          <Navbar.Brand
+            as={NavLink}
+            to="/"
+            className="navbar__brand"
+            onClick={() => setExpanded(false)}
+          >
+            {data.logo.text}
           </Navbar.Brand>
         )}
         <Navbar.Toggle
@@ -80,7 +75,7 @@ const NavBar = () => {
           <Nav className="me-auto" />
           <Nav>
             {data
-              && data.sections?.map((section, index) => (section?.type === 'link' ? (
+              && data.sections?.map((section) => (section?.type === 'link' ? (
                 <ExternalNavLink
                   key={section.title}
                   href={section.href}
@@ -96,8 +91,7 @@ const NavBar = () => {
                 <InternalNavLink
                   key={section.title}
                   onClick={() => setExpanded(false)}
-                  end={index === 0}
-                  className="navbar__link"
+                  className={`navbar__link${isSectionActive(section.href) ? ' active' : ''}`}
                   to={section.href}
                   theme={theme}
                 >
@@ -105,9 +99,10 @@ const NavBar = () => {
                 </InternalNavLink>
               )))}
           </Nav>
-          <ThemeToggler
-            onClick={() => setExpanded(false)}
-          />
+          <div className="navbar__controls">
+            <LanguageToggle onClick={() => setExpanded(false)} />
+            <ThemeToggler onClick={() => setExpanded(false)} />
+          </div>
         </Navbar.Collapse>
       </Container>
     </Navbar>

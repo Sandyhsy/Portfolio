@@ -5,9 +5,8 @@ import endpoints from '../constants/endpoints';
 
 const styles = {
   iconStyle: {
-    marginLeft: 10,
-    marginRight: 10,
-    marginBottom: 10,
+    width: 44,
+    height: 44,
   },
 };
 
@@ -27,16 +26,26 @@ function Social() {
   return (
     <div className="social">
       {data ? data.social.map((social) => (
-        <SocialIcon
-          key={social.network}
-          style={styles.iconStyle}
-          url={social.href}
-          network={social.network}
-          bgColor={theme.socialIconBgColor}
-          fgColor={theme.background}
-          target="_blank"
-          rel="noopener"
-        />
+        <div className="social__row" key={social.network}>
+          <SocialIcon
+            style={styles.iconStyle}
+            url={social.href}
+            network={social.network}
+            bgColor={theme.socialIconBgColor}
+            fgColor={theme.background}
+            target="_blank"
+            rel="noopener noreferrer"
+            label={social.label}
+          />
+          <a
+            className="social__label"
+            href={social.href}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {social.label}
+          </a>
+        </div>
       )) : null}
     </div>
   );

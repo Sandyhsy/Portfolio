@@ -1,0 +1,57 @@
+{
+  "experiences": [
+    {
+      "title": "Graduate Research Assistant",
+      "subtitle": "San José State University",
+      "workType": "Part-time",
+      "dateText": "10/2025 – 05/2026",
+      "projects": [
+        {
+          "name": "NEAR Lab — Attention-Aware AI",
+          "details": [
+            "Developed a multimodal AI pipeline integrating **Eye Tracking, Computer Vision, and GPT-4.1** for attention-aware reasoning.",
+            "Implemented **Gaze Mapping, AOI Extraction, Gaussian Heatmaps, and Pixel-Level Alignment** to analyze visual attention."
+          ],
+          "publication": {
+            "label": "Measuring Visual Attention Across Concurrent and Sequential Visual Perception Tasks",
+            "href": "https://journals.sagepub.com/doi/full/10.1177/10711813261493593"
+          },
+          "github": "https://github.com/Sandyhsy/NEAR-Project-EyeTracking-Visualization"
+        },
+        {
+          "name": "BAT Lab — Smart Wheelchair Haptic Feedback",
+          "details": [
+            "Developed a **C#-based haptic feedback system** with 12 vibration actuators, supporting directional and urgency-based alerts.",
+            "Implemented frame-based stimulation control and reaction-time logging for experimental analysis."
+          ],
+          "publication": {
+            "label": "Evaluating an AI-enhanced power wheelchair obstacle alert system: Effects of multimodal warning design on warning-response behavior",
+            "href": "https://www.sciencedirect.com/science/article/pii/S1369847826002962"
+          },
+          "github": "https://github.com/Sandyhsy/BAT_Lab_Smart_WheelChair",
+          "video": "https://drive.google.com/drive/folders/1wG55YQUw4lPtqcnvsaToMg5CbjTWugNX"
+        },
+        {
+          "name": "Embodied AI — Robotic Arm Simulation",
+          "details": [
+            "Built robotic arm simulations using **NVIDIA Isaac Sim, MuJoCo, and Python**.",
+            "Implemented joint control, waypoint-based manipulation, and motion trajectory logging."
+          ],
+          "github": "https://github.com/Sandyhsy/Embodied-AI",
+          "video": "https://www.youtube.com/watch?v=oup5Ye3jG6s"
+        }
+      ]
+    },
+    {
+      "title": "Business Intelligence Intern",
+      "subtitle": "AUO Corporation",
+      "workType": "Internship",
+      "workDescription": [
+        "Designed responsive web interfaces using **Figma, JavaScript, D3.js, and AJAX**.",
+        "Collaborated with cross-functional teams to gather requirements and develop interactive data visualizations.",
+        "Contributed to a factory management system initially deployed in Taichung."
+      ],
+      "dateText": "07/2023 – 08/2023"
+    }
+  ]
+}

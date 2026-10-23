@@ -1,0 +1,59 @@
+{
+  "experiences": [
+    {
+      "title": "研究助理",
+      "subtitle": "San José State University",
+      "workType": "兼職",
+      "dateText": "2025/10 – 2026/05",
+      "projects": [
+        {
+          "name": "NEAR Lab — 注意力感知 AI",
+          "details": [
+            "開發整合 **Eye Tracking、Computer Vision 與 GPT-4.1** 的多模態 AI Pipeline，進行使用者視覺注意力分析與推論。",
+            "實作 **Gaze Mapping、AOI Extraction、Gaussian Heatmap** 及 Pixel-Level Alignment。"
+          ],
+          "publication": {
+            "prefix": "研究發表",
+            "label": "Measuring Visual Attention Across Concurrent and Sequential Visual Perception Tasks",
+            "href": "https://journals.sagepub.com/doi/full/10.1177/10711813261493593"
+          },
+          "github": "https://github.com/Sandyhsy/NEAR-Project-EyeTracking-Visualization"
+        },
+        {
+          "name": "BAT Lab — 智慧輪椅觸覺回饋",
+          "details": [
+            "使用 **C#** 開發 12 通道振動觸覺回饋系統，支援方向與緊急程度提示。",
+            "實作 Frame-Based Stimulation Control 與 Reaction-Time Logging。"
+          ],
+          "publication": {
+            "prefix": "研究發表",
+            "label": "Evaluating an AI-enhanced power wheelchair obstacle alert system: Effects of multimodal warning design on warning-response behavior",
+            "href": "https://www.sciencedirect.com/science/article/pii/S1369847826002962"
+          },
+          "github": "https://github.com/Sandyhsy/BAT_Lab_Smart_WheelChair",
+          "video": "https://drive.google.com/drive/folders/1wG55YQUw4lPtqcnvsaToMg5CbjTWugNX"
+        },
+        {
+          "name": "Embodied AI — 機械手臂模擬",
+          "details": [
+            "使用 **NVIDIA Isaac Sim、MuJoCo 與 Python** 建立機械手臂模擬環境。",
+            "實作關節控制、Waypoint 動作序列與運動軌跡紀錄。"
+          ],
+          "github": "https://github.com/Sandyhsy/Embodied-AI",
+          "video": "https://www.youtube.com/watch?v=oup5Ye3jG6s"
+        }
+      ]
+    },
+    {
+      "title": "Business Intelligence 優化實習生",
+      "subtitle": "友達光電股份有限公司（AUO）",
+      "workType": "實習生",
+      "dateText": "2023/07 – 2023/08",
+      "workDescription": [
+        "使用 **Figma、JavaScript、D3.js 與 AJAX** 設計響應式網頁及互動式資料視覺化介面。",
+        "與跨部門團隊合作進行需求分析，開發並整合工廠管理系統前端功能。",
+        "參與台中廠區系統上線，該系統後續於一年內擴展至**全台 15 間工廠**。"
+      ]
+    }
+  ]
+}

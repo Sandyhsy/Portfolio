@@ -1,0 +1,4 @@
+{
+  "about": "## 你好 👋\n\n我是 Shao-Yu (Sandy) Huang，一位在新竹的 AI 工程師與資料工程師。\n\n我打造多模態 AI 系統，把電腦視覺、大型語言模型與資料工程接在一起，用來解決真實世界的問題。我的工作著重於透過語意推理與智慧檢索，讓 AI 更可解釋、更容易擴展，也更實用。\n\n這裡會分享我的專案、實驗、研究，以及我正在做的事情。\n\n### 工具與技術\n\n- **機器學習與 AI：** PyTorch、Machine Learning、Deep Learning、Vision Learning Model、Large Language Model、Multimodal Learning\n- **資料工程與資料庫：** ETL/ELT、Airflow、dbt、Kafka、Spark、Data Warehousing、REST APIs、MySQL、Snowflake、MongoDB\n- **視覺化與 BI：** Tableau、Power BI、Streamlit\n- **工具與平台：** Git、Docker、Linux、OpenCV、imageio\n\n### 關於我\n\n- ✨ 我喜歡把前沿的 AI 研究做成實際可用的 AI 產品。\n- 🧠 熱衷於多模態 AI、大型語言模型、AI Agent 與資料工程。\n- 🚀 目前正在打造一個由多模態 AI agent 驅動的 AI-native 時尚推薦平台。\n- 🎓 聖荷西州立大學應用資料智能碩士（M.S. in Applied Data Intelligence @ San José State University）。\n- 💼 目前正在尋找 AI Engineering、Machine Learning Engineering 或 Data Engineering 的全職機會。\n\n### 小趣事\n\n- 我養了一隻白貓\n- 我不喜歡抹茶\n- 興趣：跳舞、聽 K-pop\n",
+  "imageSource": "images/about/profile.jpg"
+}
